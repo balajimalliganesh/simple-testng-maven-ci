@@ -7,4 +7,8 @@ public class AppTest {
     public void testMessage() {
         Assert.assertEquals(App.getMessage(), "Hello from Test Build!");
     }
+    @Test
+    public void testMessagePrint() {
+        App.main(null);   // This will print the message in CI logs
+}
 }
